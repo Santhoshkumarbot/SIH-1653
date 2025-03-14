@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date:14.03.2025
+## Register Number:212224040295
+## Name:SanthoshKumar.P
 ## Problem Title
 SIH 1653: Web based Selector-Applicant Simulation Software
 ## Problem Description
@@ -11,16 +11,55 @@ Background: Recruitment and Assessment Centre (RAC) under DRDO, Ministry of Defe
 Ministry of Defence
 
 ## Idea
+1.Expert-Candidate Interaction Simulation:
+
+The solution should simulate a realistic interview environment, where experts can ask questions and candidates can respond just like in a real-life scenario.
+This could involve a video conferencing platform or a text-based interview interface that mimics an interview boardroom setup.
+2.Question Relevancy Scoring:
+
+The system would analyze the area of expertise of the candidate and generate relevant questions accordingly.
+The proposed solution could utilize Natural Language Processing (NLP) to identify the topic areas and relevance of each question to the applicant’s profile (e.g., education, experience, specialization).
+Similarly, each question’s relevancy should be scored for accuracy, ensuring the question is aligned with the candidate's domain of expertise.
+3.Candidate Response Evaluation:
+
+Candidate responses should also be scored for relevance and depth with respect to the question asked.
+An AI-powered system can evaluate the response based on a predefined rubric (e.g., key concepts, completeness, logical structure, and domain-specific knowledge).
+Speech-to-Text (for verbal responses) and Sentiment Analysis can be used to capture the tone, clarity, and professionalism of the response.
+Optionally, candidates’ responses could be analyzed for confidence and engagement, offering a more nuanced evaluation beyond just the factual correctness of their answers.
+4.Scoring System:
+
+The system should generate an overall score based on the relevancy of the question asked, the relevance of the candidate's response, and other factors like clarity, confidence, and depth.
+The scoring could be represented as a final suitability score for the candidate based on the knowledge in their domain, the ability to answer in-depth technical questions, and their potential fit for the role.
+5.Feedback and Recommendations:
+
+After the interview, candidates could be provided with automated feedback based on their performance. This feedback can highlight the areas of improvement and the areas where they performed well.
+Experts can also receive a feedback report based on the quality and relevance of the questions they asked, ensuring continuous improvement in the interview process.
 
 
 ## Proposed Solution / Architecture Diagram
+![image](https://github.com/user-attachments/assets/7499257d-61e8-4150-8e81-177bfcc6d147)
 
 
 ## Use Cases
 
+![image](https://github.com/user-attachments/assets/e7fc4618-e80e-42cc-a82f-56c5bbd2118e)
 
 ## Technology Stack
+Web Application: A user-friendly interface where candidates and experts can interact, take part in interviews, and view feedback.
+
+React.js or Angular for building responsive, interactive web interfaces.
+HTML5/CSS3 for structure and styling.
+Bootstrap or Material-UI for component libraries to ensure a polished, modern UI.
+Mobile Application (Optional): For candidates and experts who prefer to participate via mobile devices.
+
+Flutter (for cross-platform mobile development) or React Native.
+Video/Voice Integration: For the boardroom simulation experience.
+
+WebRTC: For real-time video and audio communication.
+Agora or Twilio: For enhanced video conferencing features like recording, screen sharing, etc.
 
 
 ## Dependencies
-
+ The system needs to ensure that user profiles are correctly created and managed, and relevant interview data is tied to both the expert and candidate profiles.
+Frontend: React forms for candidate and expert profile creation.
+Backend: Databases (PostgreSQL or MongoDB) store and manage user data securely
